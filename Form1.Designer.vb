@@ -22,17 +22,29 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnIniciar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnIniciar
+        '
+        Me.btnIniciar.Location = New System.Drawing.Point(63, 31)
+        Me.btnIniciar.Name = "btnIniciar"
+        Me.btnIniciar.Size = New System.Drawing.Size(108, 35)
+        Me.btnIniciar.TabIndex = 0
+        Me.btnIniciar.Text = "PROBAR"
+        Me.btnIniciar.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(595, 234)
+        Me.ClientSize = New System.Drawing.Size(242, 90)
+        Me.Controls.Add(Me.btnIniciar)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents btnIniciar As Button
 End Class
